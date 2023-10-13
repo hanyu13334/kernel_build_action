@@ -7,10 +7,10 @@ branding:
 
 inputs:
   kernel-url:https://github.com/hanyu13334/android_kernel_oppo_mtk4.19
-    description: ''
+    description: 'Kernel Source Url'
     required: true
   vendor-url:https://github.com/oppo-source/android_kernel_modules_oppo_mtk_4.19
-    description: ''
+    description: 'Kernel Vendor Source Url'
     required: false
   kernel-dir:
     required: false
@@ -24,11 +24,11 @@ inputs:
   branch:
     description: 'Branch name'
     required: false
-    default: main
-  config:vendor/r6p_nodtb_defconfig
+    default: 4.19
+  config:
     description: 'configuration for building android kernel'
     required: true
-    default: defconfig
+    default: vendor/r6p_nodtb_defconfig
   arch:
     required: true
     default: arm64

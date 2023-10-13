@@ -10,7 +10,7 @@ inputs:
     description: 'https://github.com/hanyu13334/android_kernel_oppo_mtk4.19'
     required: true
   vendor-url:
-    description: 'Kernel Vendor Source Url'
+    description: 'https://github.com/oppo-source/android_kernel_modules_oppo_mtk_4.19'
     required: false
   kernel-dir:
     required: false
@@ -25,7 +25,7 @@ inputs:
     description: 'Branch name'
     required: false
     default: main
-  config:
+  config:vendor/r6p_nodtb_defconfig
     description: 'configuration for building android kernel'
     required: true
     default: defconfig
@@ -46,24 +46,24 @@ inputs:
     default: "main"
   overlayfs:
     description: 'Enable Overlayfs for ksu'
-    required: false
-    default: false
+    required: true
+    default: true
   disable-lto:
     description: 'Disable LTO configs for configs.'
-    required: false
-    default: false
+    required: true
+    default: true
   lxc:
     description: 'Enable lxc and docker configs for configs.'
-    required: false
-    default: false
+    required: true
+    default: true
   lxc-patch:
     description: 'Apply lxc patch aviod not booting'
-    required: false
-    default: false
+    required: true
+    default: true
   kvm: 
     description: 'Enable KVM for configs.'
-    required: false
-    default: false
+    required: true
+    default: true
   ccache:
     description: 'Enable Ccache for compiling kernel'
     required: false

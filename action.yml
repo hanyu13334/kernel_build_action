@@ -7,7 +7,7 @@ branding:
 
 inputs:
   kernel-url:
-    description: 'Kernel Source Url'
+    description: 'https://github.com/hanyu13334/android_kernel_oppo_mtk4.19'
     required: true
   vendor-url:
     description: 'Kernel Vendor Source Url'

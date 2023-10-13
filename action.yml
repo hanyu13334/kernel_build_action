@@ -6,11 +6,11 @@ branding:
   color: 'blue'
 
 inputs:
-  kernel-url:
-    description: 'https://github.com/hanyu13334/android_kernel_oppo_mtk4.19'
+  kernel-url:https://github.com/hanyu13334/android_kernel_oppo_mtk4.19
+    description: ''
     required: true
-  vendor-url:
-    description: 'https://github.com/oppo-source/android_kernel_modules_oppo_mtk_4.19'
+  vendor-url:https://github.com/oppo-source/android_kernel_modules_oppo_mtk_4.19
+    description: ''
     required: false
   kernel-dir:
     required: false
